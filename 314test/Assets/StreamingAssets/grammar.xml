@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="command"
+xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+
+    <rule id="command" scope="public"/>
+        <item repeat="0-1"> please </item>
+    <item repeat="0-1"> can you </item>
+        <item repeat="0-1"> please </item>
+        <ruleref uri="#action" />
+        <tag> out.action=rules.latest(); </tag>
+        <one-of>
+            <item repeat="0-1"> me </item>
+            <item repeat="0-1"> us </item>
+        </one-of>
+        <item repeat="0-1"> the </item>
+        <ruleref uri="#object" />
+        <tag> out.object=rules.latest(); </tag>
+    </rule>
+    
+    <rule id="action" scope="private">
+        <one-of>
+            <item> display <tag> out="show"; </tag></item>
+            <item> bring <tag> out="show"; </tag></item>
+            <item> show <tag> out="show"; </tag></item>
+            <item> project <tag> out="show"; </tag></item>
+            <item> close <tag> out="close"; </tag></item>
+            <item> hide <tag> out="close"; </tag></item>
+        </one-of>
+    </rule>
+    
+    <rule id="object" scope="private">
+        <one-of>
+            <item> menu <tag> out="menu"; </tag></item>
+            <item> selection menu <tag> out="menu"; </tag></item>
+            <item> main menu <tag> out="menu"; </tag></item>
+            <item> x-ray <tag> out="x-ray"; </tag></item>
+            <item> x-ray window <tag> out="x-ray"; </tag></item>
+            <item> data <tag> out="data"; </tag></item>
+            <item> data reading<tag> out="data"; </tag></item>
+            <item> data window<tag> out="data"; </tag></item>
+        </one-of>
+    </rule>
+</grammar>

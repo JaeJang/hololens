@@ -1,0 +1,42 @@
+
+                              <grammar mode="voice"
+         root="top"
+         tag-format="semantics/1.0"
+         version="1.0"
+         xml:lang="en-US">
+ <rule id="top" scope="public">
+  <item>
+   <item repeat="0-1">
+    i want to go
+   </item>
+   from
+   <item>
+    <ruleref uri="#CityName"/>
+    <tag> out = "src=" + rules.latest(); </tag>
+   </item>
+   to
+   <item>
+    <ruleref uri="#CityName"/>
+    <tag> out += "^dst=" + rules.latest(); </tag>
+   </item>
+  </item>
+ </rule>
+
+ <rule id="CityName" scope="private">
+  <one-of>
+   <item>
+    san francisco
+    <tag>out = "sfo";</tag>
+   </item>
+   <item>
+    los angeles
+    <tag>out = "lax";</tag>
+   </item>
+   <item>
+    new orleans
+    <tag>out = "msy";</tag>
+   </item>
+  </one-of>
+ </rule>
+
+</grammar>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="redTrigger" size="0.171979 0.172244" />
+    <ImageTarget name="RedPolkaSquares" size="0.105833 0.105833" />
+    <ImageTarget name="sampleImage" size="0.250000 0.140764" />
+  </Tracking>
+</QCARConfig>
