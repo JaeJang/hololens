@@ -1,0 +1,1 @@
+C:\Users\jaeja\Desktop\term3\3900_Practicum\hololens\HoloLens Moulage\build\HoloLens Moulage\HoloLens Moulage.csproj;x86
