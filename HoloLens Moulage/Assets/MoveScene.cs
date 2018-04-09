@@ -50,7 +50,6 @@ public class MoveScene : MonoBehaviour {
 
         menu.gameObject.SetActive(false);
         
-
     }
 
     

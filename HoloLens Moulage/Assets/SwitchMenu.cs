@@ -14,6 +14,11 @@ public class SwitchMenu : MonoBehaviour {
         currentPanel = panel.transform.Find("GunshotPanel");
         currentPanel.gameObject.SetActive(true);
 
+        currentButton = GameObject.Find("GunshotType").GetComponent<Button>();
+        ColorBlock cb = currentButton.colors;
+        cb.normalColor = Color.black;
+        currentButton.colors = cb;
+
     }
 	
 	// Update is called once per frame
@@ -23,7 +28,7 @@ public class SwitchMenu : MonoBehaviour {
 
     public void clickButton(Button btn)
     {
-
+        
         currentPanel.gameObject.SetActive(false);
         if (btn.name.Equals("GunshotType"))
         {
@@ -43,13 +48,13 @@ public class SwitchMenu : MonoBehaviour {
         if (currentButton != null)
         {
             ColorBlock cb1 = currentButton.colors;
-            cb1.normalColor = Color.black;
+            cb1.normalColor = Color.white;
             currentButton.colors = cb1;
         }
 
         currentButton = btn;
         ColorBlock cb = currentButton.colors;
-        cb.normalColor = Color.blue;
+        cb.normalColor = Color.black;
         currentButton.colors = cb;
     }
 }

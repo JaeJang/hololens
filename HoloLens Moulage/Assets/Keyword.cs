@@ -10,17 +10,21 @@ public class Keyword : MonoBehaviour
 
     KeywordRecognizer keywordRecognizer;
     GameObject itemCanvas;
+    GameObject xRay;
     Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
-    public Transform text;
+    public GameObject menu;
     public GameObject imageTarget;
     DefaultTrackableEventHandler defaultTrackable;
 
     void Start()
     {
+        
         if ((itemCanvas = GameObject.Find("ItemCanvas")) == null)
         {
             print("Item Canvas not found.");
         }
+        xRay = itemCanvas.transform.Find("X-Ray").gameObject;
+
         itemCanvas.SetActive(false);
         keywords.Add("Steve, menu on", () => { displayMenu(); });
         keywords.Add("Steve, menu off", () => { closeMenu(); });
@@ -32,7 +36,8 @@ public class Keyword : MonoBehaviour
         keywordRecognizer.Start();
 
         //mTrackableBehaviour = GetComponent<TrackableBehaviour>();
-        
+        defaultTrackable = imageTarget.GetComponent<DefaultTrackableEventHandler>();
+
 
     }
 
@@ -48,7 +53,7 @@ public class Keyword : MonoBehaviour
     void displayMenu()
     {
         print("menu on");
-        defaultTrackable = imageTarget.GetComponent<DefaultTrackableEventHandler>();
+        
         defaultTrackable.OnTrackableStateChanged(
             TrackableBehaviour.Status.TRACKED,
             TrackableBehaviour.Status.NOT_FOUND);
@@ -57,6 +62,11 @@ public class Keyword : MonoBehaviour
     void closeMenu()
     {
         print("menu off");
+
+        defaultTrackable.OnTrackableStateChanged(
+            TrackableBehaviour.Status.NOT_FOUND,
+            TrackableBehaviour.Status.EXTENDED_TRACKED);
+
     }
 
     void displayXRay()
@@ -64,15 +74,26 @@ public class Keyword : MonoBehaviour
         //GameObject xray = itemCanvas.transform.Find("X-Ray").gameObject;
         //xray.SetActive(true);
         //text.gameObject.SetActive(true);
-        itemCanvas.SetActive(true);
         print("x-ray on");
+         menu.SetActive(false);
+
+        Vector3 cameraPos = Camera.main.transform.position;
+        Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
+
+        itemCanvas.transform.position = newPos;
+        xRay.transform.position = newPos;
+        itemCanvas.SetActive(true);
+        xRay.SetActive(true);
     }
 
     void closeXRay()
     {
         //GameObject xray = itemCanvas.transform.Find("X-Ray").gameObject;
         //xray.SetActive(false);
+        xRay.SetActive(false);
         itemCanvas.SetActive(false);
         print("x-ray off");
     }
+
+    
 }
