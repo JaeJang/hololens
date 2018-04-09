@@ -77,11 +77,14 @@ public class Keyword : MonoBehaviour
         print("x-ray on");
          menu.SetActive(false);
 
-        Vector3 cameraPos = Camera.main.transform.position;
-        Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
-
-        itemCanvas.transform.position = newPos;
-        xRay.transform.position = newPos;
+        //Vector3 cameraPos = Camera.main.transform.position;
+        //Vector3 newPosCanvas = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
+        //Vector3 newPosXRay = new Vector3(cameraPos.x - 70, cameraPos.y -(float)2.2, cameraPos.z + 3);
+        //Vector3 newRotation = Camera.main.transform.forward;
+        //itemCanvas.transform.position = newPosCanvas;
+        //itemCanvas.transform.rotation = Quaternion.LookRotation(newRotation);
+        //xRay.transform.position = newPosXRay;
+        //xRay.transform.rotation = Quaternion.LookRotation(newRotation);
         itemCanvas.SetActive(true);
         xRay.SetActive(true);
     }

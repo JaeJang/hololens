@@ -111,9 +111,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
 
-        Vector3 pos = Camera.main.transform.position;
-        pos.z = 3;
-        menu.TransformVector(pos);
+
+        //Vector3 cameraPos = Camera.main.transform.position;
+        //Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
+        //Vector3 newRotation = Camera.main.transform.forward;
+        //menu.transform.position = newPos;
+        //menu.transform.rotation = Quaternion.LookRotation(newRotation);
+
         menu.gameObject.SetActive(true);
         Cursor.gameObject.SetActive(true);
     }
