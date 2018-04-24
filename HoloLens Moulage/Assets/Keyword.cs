@@ -11,6 +11,8 @@ public class Keyword : MonoBehaviour
     KeywordRecognizer keywordRecognizer;
     GameObject itemCanvas;
     GameObject xRay;
+    GameObject test;
+    GameObject result;
     Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
     public GameObject menu;
     public GameObject imageTarget;
@@ -24,13 +26,25 @@ public class Keyword : MonoBehaviour
             print("Item Canvas not found.");
         }
         xRay = itemCanvas.transform.Find("X-Ray").gameObject;
+        test = itemCanvas.transform.Find("Test").gameObject;
+        result = itemCanvas.transform.Find("Result").gameObject;
 
-        itemCanvas.SetActive(false);
+        xRay.SetActive(false);
+        test.SetActive(false);
+        result.SetActive(false);
         keywords.Add("Steve, menu on", () => { displayMenu(); });
+        keywords.Add("Steve, show me the menu", () => { displayMenu(); });
         keywords.Add("Steve, menu off", () => { closeMenu(); });
         keywords.Add("Steve, x-ray on", () => { displayXRay(); });
+        keywords.Add("Steve, show me the x-ray", () => { displayXRay(); });
         keywords.Add("Steve, x-ray off", () => { closeXRay(); });
+        keywords.Add("Steve, data on", () => { displayData(); });
+        keywords.Add("Steve, show me the data", () => { displayData(); });
+        keywords.Add("Steve, data off", () => { closeData(); });
+        keywords.Add("Steve, x-ray and data off", () => { closeXray_data(); });
+        keywords.Add("Steve, data and x-ray off", () => { closeXray_data(); });
         keywords.Add("Steve, remove the image", () => { displayMenu(); });
+        keywords.Add("Steve, remove all", () => { displayMenu(); });
         keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += keyword_OnPhraseRecognized;
         keywordRecognizer.Start();
@@ -53,7 +67,7 @@ public class Keyword : MonoBehaviour
     void displayMenu()
     {
         print("menu on");
-        
+        closeXray_data();
         defaultTrackable.OnTrackableStateChanged(
             TrackableBehaviour.Status.TRACKED,
             TrackableBehaviour.Status.NOT_FOUND);
@@ -75,18 +89,29 @@ public class Keyword : MonoBehaviour
         //xray.SetActive(true);
         //text.gameObject.SetActive(true);
         print("x-ray on");
-         menu.SetActive(false);
+        menu.SetActive(false);
 
         //Vector3 cameraPos = Camera.main.transform.position;
-        //Vector3 newPosCanvas = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
-        //Vector3 newPosXRay = new Vector3(cameraPos.x - 70, cameraPos.y -(float)2.2, cameraPos.z + 3);
-        //Vector3 newRotation = Camera.main.transform.forward;
-        //itemCanvas.transform.position = newPosCanvas;
-        //itemCanvas.transform.rotation = Quaternion.LookRotation(newRotation);
-        //xRay.transform.position = newPosXRay;
-        //xRay.transform.rotation = Quaternion.LookRotation(newRotation);
+        //Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
+
+        //itemCanvas.transform.position = newPos;
+        //xRay.transform.position = newPos;
         itemCanvas.SetActive(true);
         xRay.SetActive(true);
+    }
+
+    void displayData()
+    {
+        menu.SetActive(false);
+        itemCanvas.SetActive(true);
+        test.SetActive(true);
+        result.SetActive(true);
+    }
+
+    void closeData()
+    {
+        test.SetActive(false);
+        result.SetActive(false);
     }
 
     void closeXRay()
@@ -94,8 +119,12 @@ public class Keyword : MonoBehaviour
         //GameObject xray = itemCanvas.transform.Find("X-Ray").gameObject;
         //xray.SetActive(false);
         xRay.SetActive(false);
-        itemCanvas.SetActive(false);
-        print("x-ray off");
+    }
+
+    void closeXray_data()
+    {
+        closeData();
+        closeXRay();
     }
 
     
