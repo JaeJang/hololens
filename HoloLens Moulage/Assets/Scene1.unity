@@ -503,7 +503,7 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!4 &200711181 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4938980810587284, guid: 78afc92ead08b094593170c69bcb525c,
+  m_PrefabParentObject: {fileID: 4670386748093568, guid: 78afc92ead08b094593170c69bcb525c,
     type: 2}
   m_PrefabInternal: {fileID: 200711180}
 --- !u!1 &259354506
