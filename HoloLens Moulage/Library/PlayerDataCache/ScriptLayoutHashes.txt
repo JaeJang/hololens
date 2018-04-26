@@ -155,6 +155,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 98084531bd8a843e71c0cc23d5715994 Assembly-CSharp.dll:HoloToolkit.Unity.UAudioManager
 bb71daf4be15574fae476dd54cffc6f0 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.MixedRealityTeleport
 ba66ed51a66e14863f51781e69c657ef Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.KeyboardValueKey
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowTest
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 296be13f4be3cfa18e9920cdf7ce02d9 Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.ButtonLocalizedText
 549dafb5e0b8917306ca1eeb3e20dec6 Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.CapsLockHighlight
@@ -265,6 +266,7 @@ a29ad4068504428bc987939ad419ba75 Assembly-CSharp.dll:HoloToolkit.Unity.InputModu
 066f3c01e7c10bfbdc9fc130998d1d40 Assembly-CSharp.dll:HoloToolkit.Sharing.Spawning.PrefabSpawnManager
 5882127f423fc6d1d8eb8a7da3458438 Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.SpriteButton
 14758a53766bdd03c932e05934034456 Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.AnimButton
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowResult
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.BulletController
 a791e7387cb4113e3b29c2bbd8199b96 Assembly-CSharp.dll:HoloToolkit.Unity.UX.DistorterGravity
 c68130c67ec5a4b74907fce0fbc6ebbf Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.MeshButton
@@ -465,5 +467,3 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowTest
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowResult

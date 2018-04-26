@@ -111,15 +111,35 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
 
+        Cursor.gameObject.SetActive(true);
 
+        //// Get user's head position
         //Vector3 cameraPos = Camera.main.transform.position;
+
+        //// Get a new position which will be used for displaying menu
         //Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
+
+        //// Get a rotation value of the main camera
         //Vector3 newRotation = Camera.main.transform.forward;
-        //menu.transform.position = newPos;
-        //menu.transform.rotation = Quaternion.LookRotation(newRotation);
+
+
+        //GameObject canvas = GameObject.Find("Canvas");
+
+
+        //Quaternion quat = Camera.main.transform.localRotation;
+        //quat.x = 0;
+        //quat.z = 0;
+        //canvas.transform.rotation = quat;
+        //canvas.transform.position = newPos;
+
+        //canvas.transform.rotation = Quaternion.LookRotation(newRotation);
+
+        GameObject canvas = GameObject.Find("Canvas");
+        canvas.transform.position = Cursor.transform.position;
+        canvas.transform.rotation = Cursor.transform.rotation;//* Quaternion.Euler(0, 0, 180);
 
         menu.gameObject.SetActive(true);
-        Cursor.gameObject.SetActive(true);
+        
     }
 
     #endregion // PRIVATE_METHODS
