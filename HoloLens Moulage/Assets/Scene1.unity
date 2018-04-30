@@ -2602,7 +2602,6 @@ GameObject:
   - component: {fileID: 994163252}
   - component: {fileID: 994163251}
   m_Layer: 5
-  m_Name: PanelScanMarker
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
