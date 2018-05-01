@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.Windows.Speech;
 using System.Linq;
-using UnityEngine.UI;
 using Vuforia;
 
 public class Keyword : MonoBehaviour
