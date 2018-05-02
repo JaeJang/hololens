@@ -6,6 +6,7 @@ All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
+using HoloToolkit.Unity;
 using UnityEngine;
 using Vuforia;
 
@@ -111,28 +112,18 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
 
-        
 
         //// Get user's head position
-        //Vector3 cameraPos = Camera.main.transform.position;
-
-        //// Get a new position which will be used for displaying menu
-        //Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
-
-        //// Get a rotation value of the main camera
-        //Vector3 newRotation = Camera.main.transform.forward;
+        Vector3 cameraPos = Camera.main.transform.position;
+        
 
 
-        //GameObject canvas = GameObject.Find("Canvas");
+        GameObject canvas = GameObject.Find("Canvas");
 
+        canvas.transform.position = cameraPos + Camera.main.transform.forward * 3;
 
-        //Quaternion quat = Camera.main.transform.localRotation;
-        //quat.x = 0;
-        //quat.z = 0;
-        //canvas.transform.rotation = quat;
-        //canvas.transform.position = newPos;
-
-        //canvas.transform.rotation = Quaternion.LookRotation(newRotation);
+        canvas.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
+        
 
         
 
