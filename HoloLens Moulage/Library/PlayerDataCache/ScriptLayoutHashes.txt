@@ -451,6 +451,7 @@ ee3c4f188dd0540e572b83270d99dece Assembly-CSharp.dll:.SwitchMenu
 caf36d571bbde50738bdafae2e623420 Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.SymbolDisableHighlight
 3fdf9a61e5a6856f1584b34b839455d3 Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.ScrollSessionListButton
 75cd0c6c744b9733ef29aa6c59ece2b1 Assembly-CSharp.dll:TMPro.Examples.VertexShakeB
+ee3c4f188dd0540e572b83270d99dece Assembly-CSharp.dll:.hover
 da88126cdf11ba2e81311bc5c64d91f3 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.CustomInputControl
 a5bcd5eaa3a31f63d9a69a83d4861793 Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.GenericNetworkTransmitter
 774d2cbfee83c1c0f3c11e30c7a8c851 Assembly-CSharp.dll:HoloToolkit.Unity.ToggleDebugWindow
@@ -551,4 +552,3 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-ee3c4f188dd0540e572b83270d99dece Assembly-CSharp.dll:.hover
