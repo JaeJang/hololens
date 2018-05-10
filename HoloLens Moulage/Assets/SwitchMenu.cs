@@ -14,10 +14,10 @@ public class SwitchMenu : MonoBehaviour {
         currentPanel = panel.transform.Find("GunshotPanel");
         currentPanel.gameObject.SetActive(true);
 
-        currentButton = GameObject.Find("GunshotType").GetComponent<Button>();
-        ColorBlock cb = currentButton.colors;
-        cb.normalColor = Color.black;
-        currentButton.colors = cb;
+        //currentButton = GameObject.Find("GunshotType").GetComponent<Button>();
+        //ColorBlock cb = currentButton.colors;
+        //cb.normalColor = Color.black;
+        //currentButton.colors = cb;
 
     }
 	
