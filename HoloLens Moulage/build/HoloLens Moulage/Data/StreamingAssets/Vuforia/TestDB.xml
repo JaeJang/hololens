@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="redTrigger" size="0.171979 0.172244" />
-    <ImageTarget name="RedPolkaSquares" size="0.105833 0.105833" />
-    <ImageTarget name="sampleImage" size="0.250000 0.140764" />
+    <ImageTarget name="redTrigger3" size="0.171979 0.172244" />
+    <ImageTarget name="redTrigger4" size="0.171979 0.172244" />
+    <ImageTarget name="redTrigger2" size="0.171979 0.172244" />
+    <ImageTarget name="redTrigger5" size="0.171979 0.172244" />
+    <ImageTarget name="redTrigger1" size="0.171979 0.172244" />
   </Tracking>
 </QCARConfig>

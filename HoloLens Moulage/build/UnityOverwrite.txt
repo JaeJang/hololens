@@ -18,7 +18,7 @@ HoloLens Moulage.sln: modified
 314test\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
 HoloLens Moulage\App.cs: modified
-HoloLens Moulage\HoloLens Moulage.csproj: A7D78F421E2A9CE14A704B374EC10FC2
+HoloLens Moulage\HoloLens Moulage.csproj: modified
 HoloLens Moulage\HoloLens Moulage.csproj.user: modified
 HoloLens Moulage\Package.appxmanifest: CBE6F51A74BD3CB577952EF80885DD04
 HoloLens Moulage\project.json: 1D02BC64BAC0D041019673A1C4C51737

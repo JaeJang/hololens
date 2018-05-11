@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using HoloToolkit.Unity.InputModule;
 
 public class MainMenu : MonoBehaviour { 
 
@@ -73,11 +72,18 @@ public class MainMenu : MonoBehaviour {
         ColorUtility.TryParseHtmlString("#6BC8E6FF", out blue);
         white = new Color();
         ColorUtility.TryParseHtmlString("#FFFFFFFF", out white);
+
+        RectTransform rectMenu = (RectTransform)menu.transform;
+        Vector2 size = rectMenu.sizeDelta;
+        BoxCollider collider = menu.GetComponent<BoxCollider>();
+        collider.center = new Vector3(rectMenu.pivot.x, rectMenu.pivot.y, rectMenu.position.z);
+        collider.size = size;
     }
+
 
     public void openImageOption()
     {
-        this.gameObject.SetActive(false);
+        menu.transform.Find("MainMenu").gameObject.SetActive(false);
         imageOption.SetActive(true);
     }
 
