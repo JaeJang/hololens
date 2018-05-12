@@ -5,6 +5,8 @@ namespace Academy.HoloToolkit.Unity
 {
     public class GestureManager : Singleton<GestureManager>
     {
+        public GameObject menu;
+
         // Tap and Navigation gesture recognizer.
         public GestureRecognizer NavigationRecognizer { get; private set; }
 
@@ -203,15 +205,22 @@ namespace Academy.HoloToolkit.Unity
         {
             if (!GazeManager.Instance.Hit)
             {
-                Transform menu = GameObject.Find("Menu").transform;
-                if (!menu.Find("ImageOption").gameObject.activeSelf)
+                //Transform menu = GameObject.Find("Menu").transform;
+                if (!menu.transform.Find("ImageOption").gameObject.activeSelf)
                 {
-                    menu.position = Camera.main.transform.position + Camera.main.transform.forward * 3;
-                    menu.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
-                    RectTransform imageOption = (RectTransform)menu.Find("ImageOption");
+                    menu.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 3;
+                    menu.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
+                    menu.SetActive(true);
+                    Transform imageOption = menu.transform.Find("ImageOption");
                     imageOption.gameObject.SetActive(true);
                     //Debug.Log(menu.Find("ImageOption").transform.position.x);
                     //Debug.Log(menu.Find("ImageOption").transform.position.y);
+
+                    /*RectTransform rectMenu = (RectTransform)menu.transform;
+                    Vector2 size = rectMenu.sizeDelta;
+                    BoxCollider collider = menu.GetComponent<BoxCollider>();
+                    collider.center = new Vector3(rectMenu.pivot.x, rectMenu.pivot.y, rectMenu.position.z);
+                    collider.size = size;*/
                 }
 
             }

@@ -73,11 +73,12 @@ public class MainMenu : MonoBehaviour {
         white = new Color();
         ColorUtility.TryParseHtmlString("#FFFFFFFF", out white);
 
-        RectTransform rectMenu = (RectTransform)menu.transform;
+        /*RectTransform rectMenu = (RectTransform)menu.transform;
         Vector2 size = rectMenu.sizeDelta;
         BoxCollider collider = menu.GetComponent<BoxCollider>();
         collider.center = new Vector3(rectMenu.pivot.x, rectMenu.pivot.y, rectMenu.position.z);
-        collider.size = size;
+        collider.size = size;*/
+        
     }
 
 
@@ -197,6 +198,7 @@ public class MainMenu : MonoBehaviour {
             woundTypeColorReset();
             woundOptionColorReset();
             clearOptionPanels();
+            menu.SetActive(false);
             imageOption.SetActive(false);
             woundType.SetActive(false);
             confirmMenu.SetActive(false);
@@ -247,4 +249,6 @@ public class MainMenu : MonoBehaviour {
         string image = "Image" + img.name.Substring(11, img.name.Length - 11);
         imageOption.transform.Find(image).transform.Find("ConfigCheck").gameObject.SetActive(true);
     }
+
+    
 }

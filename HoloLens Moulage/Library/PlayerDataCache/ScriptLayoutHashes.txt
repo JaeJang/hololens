@@ -224,6 +224,7 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.Benchmark03
+fae0736a02865ba74d2a8182bcbad4a4 Assembly-CSharp.dll:.makeCollider
 b9332c0eee630779376843b5343eb250 Assembly-CSharp.dll:TMPro.Examples.TMP_TextInfoDebugTool
 f4bd1aee67eeef7953cce6c44588b3d7 TextMeshPro-2017.3-Runtime.dll:TMPro.TextContainer
 bf22e89fa4b77e86d45d7ae313079474 TextMeshPro-2017.3-Runtime.dll:TMPro.TextMeshPro
@@ -330,7 +331,7 @@ ee3c4f188dd0540e572b83270d99dece Assembly-CSharp.dll:.SwitchMenu
 5465eae51985f0cb194548215d2133ec Assembly-CSharp.dll:.ScrollDetailTexture
 6826e26f7cc718f870001971f13e79c7 Assembly-CSharp.dll:TMPro.TMP_TextEventHandler
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.VertexColorCycler
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Academy.HoloToolkit.Unity.GestureManager
+7bd8768b90b905d5b5541fe42addb342 Assembly-CSharp.dll:Academy.HoloToolkit.Unity.GestureManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AstronautManager
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner
 8341b3cb2ade13f5c82c8071edc414fb Assembly-CSharp.dll:Academy.HoloToolkit.Unity.CursorManager
