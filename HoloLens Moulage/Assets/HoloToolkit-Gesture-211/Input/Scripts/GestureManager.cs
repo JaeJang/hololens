@@ -224,6 +224,18 @@ namespace Academy.HoloToolkit.Unity
                     collider.center = new Vector3(rectMenu.pivot.x, rectMenu.pivot.y, rectMenu.position.z);
                     collider.size = size;*/
                 }
+                else
+                {
+                    menu.transform.Find("MainMenu").gameObject.SetActive(false);
+                    menu.transform.Find("ImageOption").gameObject.SetActive(false);
+                    menu.transform.Find("WoundType").gameObject.SetActive(false);
+                    menu.transform.Find("GunshotOption").gameObject.SetActive(false);
+                    menu.transform.Find("SlashOption").gameObject.SetActive(false);
+                    menu.transform.Find("StabOption").gameObject.SetActive(false);
+                    menu.transform.Find("ConfirmMenu").gameObject.SetActive(false);
+                    menu.SetActive(false);
+
+                }
 
             }
         }
