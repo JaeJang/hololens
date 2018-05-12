@@ -38,6 +38,7 @@ public class MainMenu : MonoBehaviour {
 
     private GameObject imageSelected = null;
     private string woundSelected = null;
+    private string tagSelected = null;
 
     private void Start()
     {
@@ -103,6 +104,7 @@ public class MainMenu : MonoBehaviour {
         string name = button.name;
         string img = name.Substring(0, 5) + "Target" + name.Substring(5, name.Length - 5);
         imageSelected = GameObject.Find(img);
+        tagSelected = button.tag;
     }
 
     public void openWoundOption(Button button)
@@ -192,7 +194,7 @@ public class MainMenu : MonoBehaviour {
         {
             SetConfigCheck(imageSelected);
             clearWoundsOfTarget(imageSelected);
-            imageSelected.transform.Find(woundSelected).gameObject.SetActive(true);
+            imageSelected.transform.Find(tagSelected + woundSelected).gameObject.SetActive(true);
             clearSelected();
             imageOptionColorReset();
             woundTypeColorReset();
@@ -213,7 +215,7 @@ public class MainMenu : MonoBehaviour {
         {
             SetConfigCheck(imageSelected);
             clearWoundsOfTarget(imageSelected);
-            imageSelected.transform.Find(woundSelected).gameObject.SetActive(true);
+            imageSelected.transform.Find(tagSelected + woundSelected).gameObject.SetActive(true);
             clearSelected();
             imageOptionColorReset();
             woundTypeColorReset();
@@ -228,12 +230,12 @@ public class MainMenu : MonoBehaviour {
 
     private void clearWoundsOfTarget(GameObject target)
     {
-        target.transform.Find("Gunshot1").gameObject.SetActive(false);
-        target.transform.Find("Gunshot2").gameObject.SetActive(false);
-        target.transform.Find("Stab1").gameObject.SetActive(false);
-        target.transform.Find("Stab2").gameObject.SetActive(false);
-        target.transform.Find("Slash1").gameObject.SetActive(false);
-        target.transform.Find("Slash2").gameObject.SetActive(false);
+        target.transform.Find(tagSelected+"Gunshot1").gameObject.SetActive(false);
+        target.transform.Find(tagSelected + "Gunshot2").gameObject.SetActive(false);
+        target.transform.Find(tagSelected + "Stab1").gameObject.SetActive(false);
+        target.transform.Find(tagSelected + "Stab2").gameObject.SetActive(false);
+        target.transform.Find(tagSelected + "Slash1").gameObject.SetActive(false);
+        target.transform.Find(tagSelected + "Slash2").gameObject.SetActive(false);
     }
 
     public void resetImage(Button button)
