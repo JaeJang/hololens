@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<grammar version="1.0" xml:lang="en-CA" mode="voice" root="command"
+xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+
+	<rule id="command">
+		<one-of>
+            <item repeat="0-1"> can you </item>
+			<item repeat="0-1"> can i </item>
+			<item repeat="0-1"> may i </item>
+            <item repeat="0-1"> could you </item>
+        </one-of>
+        <item repeat="0-1"> please </item>
+		<one-of>
+			<item> <ruleref uri="#vocommand"/> <tag> out.vocommand = rules.vocommand; </tag> </item>
+			<item> <ruleref uri="#ovcommand"/> <tag> out.ovcommand = rules.ovcommand; </tag> </item>
+			<item> <ruleref uri="#twocommands"/> <tag> out.twocommands = rules.twocommands; </tag> </item>
+		</one-of>
+	</rule>
+	
+	<rule id="twocommands">
+		<one-of>
+			<item> <ruleref uri="#vocommand"/> <tag> out.command1 = rules.vocommand; </tag> </item>
+			<item> <ruleref uri="#ovcommand"/> <tag> out.command1 = rules.ovcommand; </tag> </item>
+		</one-of>
+		<item> and </item>
+		<one-of>
+			<item> <ruleref uri="#vocommand"/> <tag> out.command2 = rules.vocommand; </tag> </item>
+			<item> <ruleref uri="#ovcommand"/> <tag> out.command2 = rules.ovcommand; </tag> </item>
+		</one-of>
+    </rule>
+	
+    <rule id="vocommand">
+        <ruleref uri="#activeaction"/> <tag> out.action = rules.activeaction; </tag>
+        <one-of>
+            <item repeat="0-1"> me </item>
+            <item repeat="0-1"> us </item>
+        </one-of>
+        <item repeat="0-1"> the </item>
+        <ruleref uri="#object"/> <tag> out.object = rules.object; </tag>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> the </item>
+		<item repeat="0-1"> <ruleref uri="#object"/> <tag> out.object += " " + rules.object; </tag> </item>
+    </rule>
+	
+	<rule id="ovcommand">
+		<one-of>
+            <item repeat="0-1"> have </item>
+            <item repeat="0-1"> make </item>
+			<item repeat="0-1"> keep </item>
+        </one-of>
+		<item repeat="0-1"> the </item>
+        <ruleref uri="#object"/> <tag> out.object = rules.object; </tag>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> the </item>
+		<item repeat="0-1"> <ruleref uri="#object"/> <tag> out.object += " " + rules.object; </tag> </item>
+		<ruleref uri="#passiveaction"/> <tag> out.action = rules.passiveaction; </tag>
+    </rule>
+    
+    <rule id="activeaction">
+        <one-of>
+            <item> display <tag> out="show"; </tag></item>
+            <item> bring <tag> out="show"; </tag></item>
+            <item> show <tag> out="show"; </tag></item>
+            <item> project <tag> out="show"; </tag></item>
+			<item> print <tag> out="show"; </tag></item>
+			<item> present <tag> out="show"; </tag></item>
+			<item> turn on <tag> out="show"; </tag></item>
+			<item> enable <tag> out="show"; </tag></item>
+			<item> see <tag> out="show"; </tag></item>
+            <item> close <tag> out="close"; </tag></item>
+            <item> hide <tag> out="close"; </tag></item>
+			<item> turn off <tag> out="close"; </tag></item>
+			<item> disable <tag> out="close"; </tag></item>
+			<item> remove <tag> out="close"; </tag></item>
+			<item> clear <tag> out="close"; </tag></item>
+			<item> clear up <tag> out="close"; </tag></item>
+			<item> clean <tag> out="close"; </tag></item>
+			<item> clean up <tag> out="close"; </tag></item>
+        </one-of>
+    </rule>
+    
+	<rule id="passiveaction">
+		<one-of>
+		<item> show up <tag> out="show"; </tag></item>
+			<item> appear <tag> out="show"; </tag></item>
+			<item> pop up <tag> out="show"; </tag></item>
+            <item> displayed <tag> out="show"; </tag></item>
+			<item> keep <tag> out="show"; </tag></item>
+            <item> shown <tag> out="show"; </tag></item>
+			<item> printed <tag> out="show"; </tag></item>
+			<item> turned on <tag> out="show"; </tag></item>
+			<item> on <tag> out="show"; </tag></item>
+			<item> enabled <tag> out="show"; </tag></item>
+            <item> closed <tag> out="close"; </tag></item>
+            <item> hidden <tag> out="close"; </tag></item>
+			<item> turned off <tag> out="close"; </tag></item>
+			<item> off <tag> out="close"; </tag></item>
+			<item> disabled <tag> out="close"; </tag></item>
+			<item> removed <tag> out="close"; </tag></item>
+			<item> cleared up <tag> out="close"; </tag></item>
+			<item> cleaned up <tag> out="close"; </tag></item>
+			<item> disappear <tag> out="close"; </tag></item>
+			<item> go away <tag> out="close"; </tag></item>
+		</one-of>
+	</rule>
+	
+    <rule id="object">
+        <one-of>
+            <item> menu <tag> out="menu"; </tag></item>
+            <item> selection menu <tag> out="menu"; </tag></item>
+            <item> wound catalogue <tag> out="menu"; </tag></item>
+			<item> catalogue <tag> out="menu"; </tag></item>
+            <item> x-ray <tag> out="x-ray"; </tag></item>
+            <item> data <tag> out="data"; </tag></item>
+			<item> space <tag> out="all"; </tag></item>
+			<item> all <tag> out="all"; </tag></item>
+			<item> everything <tag> out="all"; </tag></item>
+        </one-of>
+    </rule>
+	
+	
+	
+</grammar>

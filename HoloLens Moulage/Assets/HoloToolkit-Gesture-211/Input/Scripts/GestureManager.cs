@@ -6,6 +6,7 @@ namespace Academy.HoloToolkit.Unity
     public class GestureManager : Singleton<GestureManager>
     {
         public GameObject menu;
+        public GameObject cursor;
 
         // Tap and Navigation gesture recognizer.
         public GestureRecognizer NavigationRecognizer { get; private set; }
@@ -213,6 +214,7 @@ namespace Academy.HoloToolkit.Unity
                     menu.SetActive(true);
                     Transform imageOption = menu.transform.Find("ImageOption");
                     imageOption.gameObject.SetActive(true);
+                    cursor.SetActive(true);
                     //Debug.Log(menu.Find("ImageOption").transform.position.x);
                     //Debug.Log(menu.Find("ImageOption").transform.position.y);
 
