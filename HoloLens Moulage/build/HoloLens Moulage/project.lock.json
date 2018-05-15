@@ -15849,23 +15849,23 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\jaeja\\.nuget\\packages\\": {},
+    "C:\\Users\\shiba\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaeja\\Desktop\\term3\\4900_Practicum\\hololens\\HoloLens Moulage\\build\\HoloLens Moulage\\HoloLens Moulage.csproj",
+      "projectUniqueName": "C:\\Users\\shiba\\Desktop\\hololens\\HoloLens Moulage\\build\\HoloLens Moulage\\HoloLens Moulage.csproj",
       "projectName": "HoloLens Moulage",
-      "projectPath": "C:\\Users\\jaeja\\Desktop\\term3\\4900_Practicum\\hololens\\HoloLens Moulage\\build\\HoloLens Moulage\\HoloLens Moulage.csproj",
-      "projectJsonPath": "C:\\Users\\jaeja\\Desktop\\term3\\4900_Practicum\\hololens\\HoloLens Moulage\\build\\HoloLens Moulage\\project.json",
-      "packagesPath": "C:\\Users\\jaeja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaeja\\Desktop\\term3\\4900_Practicum\\hololens\\HoloLens Moulage\\build\\HoloLens Moulage\\obj\\",
+      "projectPath": "C:\\Users\\shiba\\Desktop\\hololens\\HoloLens Moulage\\build\\HoloLens Moulage\\HoloLens Moulage.csproj",
+      "projectJsonPath": "C:\\Users\\shiba\\Desktop\\hololens\\HoloLens Moulage\\build\\HoloLens Moulage\\project.json",
+      "packagesPath": "C:\\Users\\shiba\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\shiba\\Desktop\\hololens\\HoloLens Moulage\\build\\HoloLens Moulage\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jaeja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -15876,8 +15876,8 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "C:\\Users\\jaeja\\Desktop\\term3\\4900_Practicum\\hololens\\HoloLens Moulage\\build\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
-              "projectPath": "C:\\Users\\jaeja\\Desktop\\term3\\4900_Practicum\\hololens\\HoloLens Moulage\\build\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            "C:\\Users\\shiba\\Desktop\\hololens\\HoloLens Moulage\\build\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "C:\\Users\\shiba\\Desktop\\hololens\\HoloLens Moulage\\build\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
             }
           }
         }

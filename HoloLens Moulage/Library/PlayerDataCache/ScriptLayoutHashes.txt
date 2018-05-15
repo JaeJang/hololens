@@ -102,6 +102,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.getInFrontOfYou
 a0c721105be7b25bd91dbfa3278c61d2 Assembly-CSharp.dll:.DismissOnSelect
 76015de5fcb247eeb8df66c001d5a22d Assembly-CSharp.dll:TMPro.Examples.TMP_UiFrameRateCounter
 75cd0c6c744b9733ef29aa6c59ece2b1 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
@@ -189,7 +190,7 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ImgTarget5Scrpt
+b37111b5185641041734c4376983126d Assembly-CSharp.dll:.ImgTarget5Scrpt
 26215f135eeb48d8fa1189498c107f6c Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 0561521e336e270e6e5a9c61387cb838 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
 2e0fd93f459db951da0e2e94e2e33fb7 Vuforia.UnityExtensions.dll:Vuforia.AnchorStageBehaviour
@@ -253,7 +254,7 @@ b900ead596b2fb1093b31cb63a678767 Assembly-CSharp.dll:TMPro.Examples.TextMeshProF
 e611f0bfab75b2af0aa9edf1eeb6314c Assembly-CSharp.dll:Academy.HoloToolkit.Unity.Interpolator
 dad1c1272dfe1898bb613dcb2631bcce Assembly-CSharp.dll:TMPro.Examples.Benchmark02
 847108a4f4300c8402f74cce11a88a67 Assembly-CSharp.dll:.DropMe
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ImgTarget4Scrpt
+b37111b5185641041734c4376983126d Assembly-CSharp.dll:.ImgTarget4Scrpt
 108ae927f4934540bea01bb3c4afd105 Assembly-CSharp.dll:.TrackableEventHandler_Image1
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-Editor.dll:TMPro.EditorUtilities.DropdownEditor
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-Editor.dll:TMPro.EditorUtilities.TMP_ColorGradientEditor
@@ -303,9 +304,10 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DragPanel
 108ae927f4934540bea01bb3c4afd105 Assembly-CSharp.dll:.TrackableEventHandler_Image4
 df343383b9d2e96226a204a164f3994d Assembly-CSharp.dll:.DragMe
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ImgTarget1Scrpt
+b37111b5185641041734c4376983126d Assembly-CSharp.dll:.ImgTarget1Scrpt
 ecd2c13a8828eba4a5b6eaaaeee884fa Assembly-CSharp.dll:.GestureAction
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.whereYouAre
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GrammarScriptController
 62229a3e4d53ca59bec192e89627ed52 Assembly-CSharp.dll:TMPro.Examples.CameraController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
@@ -314,9 +316,9 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 aa9d1bd0cc771545f2ae1f63a6d0ed6a Assembly-CSharp.dll:TMPro.Examples.TMP_TextEventCheck
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.InteractibleManager
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ImgTarget3Scrpt
+b37111b5185641041734c4376983126d Assembly-CSharp.dll:.ImgTarget3Scrpt
 f0f0ab6b8a39d0572cfa4ea315d84fbf Assembly-CSharp.dll:TMPro.Examples.Benchmark04
-6e23f2a67a2066f479f813bfd514d679 Assembly-CSharp.dll:.Grammar
+735934aa0556782e75b84f1e3f8eb9ab Assembly-CSharp.dll:.Grammar
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.quitButton
 108ae927f4934540bea01bb3c4afd105 Assembly-CSharp.dll:.TrackableEventHandler_Image3
 29273f491d11f6bdd02a43a9d8df84c7 Assembly-CSharp.dll:TMPro.Examples.TMP_ExampleScript_01
@@ -326,7 +328,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 1cd4893b18ef6c9e1612214d23ea08a3 Assembly-CSharp.dll:.ChatController
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ImgTarget2Scrpt
+b37111b5185641041734c4376983126d Assembly-CSharp.dll:.ImgTarget2Scrpt
 a0c721105be7b25bd91dbfa3278c61d2 Assembly-CSharp.dll:.Interactible
 48a9dee325686d1924a2646b71c83f08 Assembly-CSharp.dll:TMPro.Examples.Benchmark01
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver

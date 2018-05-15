@@ -7,23 +7,20 @@ using Vuforia;
 public class Grammar : MonoBehaviour
 {
     GrammarRecognizer grammarRecognizer;
-    GameObject itemCanvas;
     GameObject xRay;
     GameObject test;
     GameObject result;
     public GameObject menu;
+    public GameObject itemCanvas;
     public GameObject imageTarget1;
     public GameObject imageTarget2;
     public GameObject imageTarget3;
     public GameObject imageTarget4;
     public GameObject imageTarget5;
+    public GameObject cursor;
 
     void Start()
     {
-        if ((itemCanvas = GameObject.Find("ItemCanvas")) == null)
-        {
-            print("Item Canvas not found.");
-        }
         xRay = itemCanvas.transform.Find("X-Ray").gameObject;
         test = itemCanvas.transform.Find("Test").gameObject;
         result = itemCanvas.transform.Find("Result").gameObject;
@@ -66,6 +63,7 @@ public class Grammar : MonoBehaviour
     {
         menu.SetActive(true);
         menu.transform.Find("MainMenu").gameObject.SetActive(true);
+        cursor.SetActive(true);
     }
 
     void closeMenu()
@@ -78,6 +76,7 @@ public class Grammar : MonoBehaviour
         menu.transform.Find("StabOption").gameObject.SetActive(false);
         menu.transform.Find("ConfirmMenu").gameObject.SetActive(false);
         menu.SetActive(false);
+        cursor.SetActive(false);
     }
 
     void displayData()

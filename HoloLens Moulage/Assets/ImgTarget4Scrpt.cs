@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ImgTarget4Scrpt : MonoBehaviour {
-
+    public GameObject wound;
     void Start()
     {
-        GameObject target1 = GameObject.FindGameObjectWithTag("IT4");
-        transform.SetParent(target1.transform, false);
-        transform.gameObject.SetActive(false);
+        GameObject target4 = GameObject.FindGameObjectWithTag("IT4");
+        wound.transform.SetParent(target4.transform, false);
+        wound.SetActive(false);
     }
 }

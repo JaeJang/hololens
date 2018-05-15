@@ -85,12 +85,14 @@ public class MainMenu : MonoBehaviour {
 
     public void openImageOption()
     {
+        resetDectectionCheckboxes();
         menu.transform.Find("MainMenu").gameObject.SetActive(false);
         imageOption.SetActive(true);
     }
 
     public void openWoundType(Button button)
     {
+        resetDectectionCheckboxes();
         clearOptionPanels();
         confirmMenu.SetActive(false);
         imageOptionColorReset();
@@ -109,6 +111,7 @@ public class MainMenu : MonoBehaviour {
 
     public void openWoundOption(Button button)
     {
+        resetDectectionCheckboxes();
         clearOptionPanels();
         woundTypeColorReset();
         woundOptionColorReset();
@@ -121,6 +124,7 @@ public class MainMenu : MonoBehaviour {
 
     public void selectWound(Button button)
     {
+        resetDectectionCheckboxes();
         clearSelected();
         woundOptionColorReset();
         onClickedHighlight = button.colors;
@@ -190,6 +194,7 @@ public class MainMenu : MonoBehaviour {
 
     public void confirmExit()
     {
+        resetDectectionCheckboxes();
         if (imageSelected != null && woundSelected != null)
         {
             SetConfigCheck(imageSelected);
@@ -211,6 +216,7 @@ public class MainMenu : MonoBehaviour {
 
     public void confirmNext()
     {
+        resetDectectionCheckboxes();
         if (imageSelected != null && woundSelected != null)
         {
             SetConfigCheck(imageSelected);
@@ -230,7 +236,7 @@ public class MainMenu : MonoBehaviour {
 
     private void clearWoundsOfTarget(GameObject target)
     {
-        target.transform.Find(tagSelected+"Gunshot1").gameObject.SetActive(false);
+        target.transform.Find(tagSelected + "Gunshot1").gameObject.SetActive(false);
         target.transform.Find(tagSelected + "Gunshot2").gameObject.SetActive(false);
         target.transform.Find(tagSelected + "Stab1").gameObject.SetActive(false);
         target.transform.Find(tagSelected + "Stab2").gameObject.SetActive(false);
@@ -252,5 +258,12 @@ public class MainMenu : MonoBehaviour {
         imageOption.transform.Find(image).transform.Find("ConfigCheck").gameObject.SetActive(true);
     }
 
-    
+    private void resetDectectionCheckboxes()
+    {
+        menu.transform.Find("ImageOption").transform.Find("Image1").transform.Find("Image1Check").gameObject.SetActive(false);
+        menu.transform.Find("ImageOption").transform.Find("Image2").transform.Find("Image2Check").gameObject.SetActive(false);
+        menu.transform.Find("ImageOption").transform.Find("Image3").transform.Find("Image3Check").gameObject.SetActive(false);
+        menu.transform.Find("ImageOption").transform.Find("Image4").transform.Find("Image4Check").gameObject.SetActive(false);
+        menu.transform.Find("ImageOption").transform.Find("Image5").transform.Find("Image5Check").gameObject.SetActive(false);
+    }
 }
