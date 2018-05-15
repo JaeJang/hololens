@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour { 
+public class MainMenu : MonoBehaviour {
+
+    public GameObject cursor;
 
     private GameObject menu;
     private GameObject imageOption;
@@ -82,6 +84,23 @@ public class MainMenu : MonoBehaviour {
         
     }
 
+    void OnEnable()
+    {
+        if(cursor != null)
+        {
+            cursor.SetActive(true);
+
+        }
+    }
+
+    void OnDisable()
+    {
+        if(cursor != null)
+        {
+            cursor.SetActive(false);    
+
+        }
+    }
 
     public void openImageOption()
     {

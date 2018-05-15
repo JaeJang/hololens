@@ -90,7 +90,7 @@ public class TrackableEventHandler_Image3 : MonoBehaviour, ITrackableEventHandle
 
         menu.transform.Find("ImageOption").transform.Find("Image3").transform.Find("Image3Check").gameObject.SetActive(true);
         //menu.gameObject.SetActive(false);
-        Cursor.gameObject.SetActive(false);
+        //Cursor.gameObject.SetActive(false);
     }
 
 
@@ -138,7 +138,7 @@ public class TrackableEventHandler_Image3 : MonoBehaviour, ITrackableEventHandle
 
         menu.transform.Find("ImageOption").transform.Find("Image3").transform.Find("Image3Check").gameObject.SetActive(false);
         //menu.gameObject.SetActive(true);
-        Cursor.gameObject.SetActive(true);
+        //Cursor.gameObject.SetActive(true);
     }
 
     #endregion // PRIVATE_METHODS

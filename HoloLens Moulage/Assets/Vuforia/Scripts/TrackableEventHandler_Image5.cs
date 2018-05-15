@@ -90,7 +90,7 @@ public class TrackableEventHandler_Image5 : MonoBehaviour, ITrackableEventHandle
 
         menu.transform.Find("ImageOption").transform.Find("Image5").transform.Find("Image5Check").gameObject.SetActive(true);
         //menu.gameObject.SetActive(false);
-        Cursor.gameObject.SetActive(false);
+        //Cursor.gameObject.SetActive(false);
     }
 
 
@@ -138,7 +138,7 @@ public class TrackableEventHandler_Image5 : MonoBehaviour, ITrackableEventHandle
 
         menu.transform.Find("ImageOption").transform.Find("Image5").transform.Find("Image5Check").gameObject.SetActive(false);
         //menu.gameObject.SetActive(true);
-        Cursor.gameObject.SetActive(true);
+        //Cursor.gameObject.SetActive(true);
     }
 
     #endregion // PRIVATE_METHODS
