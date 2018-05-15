@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 23559446}
   - component: {fileID: 23559451}
   - component: {fileID: 23559450}
+  - component: {fileID: 23559453}
   - component: {fileID: 23559452}
   m_Layer: 8
   m_Name: IT2Slash2
@@ -366,6 +367,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 23559444}
+--- !u!114 &23559453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23559444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &26664295
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +392,7 @@ GameObject:
   - component: {fileID: 26664297}
   - component: {fileID: 26664302}
   - component: {fileID: 26664301}
+  - component: {fileID: 26664304}
   - component: {fileID: 26664303}
   m_Layer: 8
   m_Name: IT4Stab2
@@ -533,6 +546,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 26664295}
+--- !u!114 &26664304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26664295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &28659522
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +571,7 @@ GameObject:
   - component: {fileID: 28659524}
   - component: {fileID: 28659529}
   - component: {fileID: 28659528}
+  - component: {fileID: 28659531}
   - component: {fileID: 28659530}
   m_Layer: 8
   m_Name: IT5Slash1
@@ -700,6 +725,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 28659522}
+--- !u!114 &28659531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28659522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &32126304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1073,7 @@ GameObject:
   - component: {fileID: 85043862}
   - component: {fileID: 85043865}
   - component: {fileID: 85043864}
+  - component: {fileID: 85043866}
   - component: {fileID: 85043863}
   m_Layer: 8
   m_Name: IT1Stab1
@@ -1190,6 +1227,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &85043866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85043857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &102967151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,6 +1986,7 @@ GameObject:
   - component: {fileID: 153906720}
   - component: {fileID: 153906725}
   - component: {fileID: 153906724}
+  - component: {fileID: 153906727}
   - component: {fileID: 153906726}
   m_Layer: 8
   m_Name: IT2Slash1
@@ -2091,6 +2140,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 153906718}
+--- !u!114 &153906727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153906718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &156210290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4737,6 +4797,7 @@ GameObject:
   - component: {fileID: 712138058}
   - component: {fileID: 712138063}
   - component: {fileID: 712138062}
+  - component: {fileID: 712138065}
   - component: {fileID: 712138064}
   m_Layer: 8
   m_Name: IT4Stab1
@@ -4890,6 +4951,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 712138056}
+--- !u!114 &712138065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 712138056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &720889264
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,6 +5963,7 @@ GameObject:
   - component: {fileID: 793047272}
   - component: {fileID: 793047277}
   - component: {fileID: 793047276}
+  - component: {fileID: 793047279}
   - component: {fileID: 793047278}
   m_Layer: 8
   m_Name: IT3Gunshot1
@@ -6044,6 +6117,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 793047270}
+--- !u!114 &793047279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793047270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &796692156
 GameObject:
   m_ObjectHideFlags: 0
@@ -7354,6 +7438,7 @@ GameObject:
   - component: {fileID: 865320023}
   - component: {fileID: 865320026}
   - component: {fileID: 865320025}
+  - component: {fileID: 865320027}
   - component: {fileID: 865320024}
   m_Layer: 8
   m_Name: IT1Gunshot2
@@ -7507,6 +7592,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &865320027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 865320018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &883249589
 GameObject:
   m_ObjectHideFlags: 0
@@ -7595,6 +7691,7 @@ GameObject:
   - component: {fileID: 928041678}
   - component: {fileID: 928041681}
   - component: {fileID: 928041680}
+  - component: {fileID: 928041682}
   - component: {fileID: 928041679}
   m_Layer: 8
   m_Name: IT1Slash2
@@ -7748,6 +7845,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &928041682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928041673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &936677425
 GameObject:
   m_ObjectHideFlags: 0
@@ -7848,6 +7956,7 @@ GameObject:
   - component: {fileID: 939307350}
   - component: {fileID: 939307355}
   - component: {fileID: 939307354}
+  - component: {fileID: 939307357}
   - component: {fileID: 939307356}
   m_Layer: 8
   m_Name: IT3Slash2
@@ -8001,6 +8110,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 939307348}
+--- !u!114 &939307357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939307348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &940443768
 GameObject:
   m_ObjectHideFlags: 0
@@ -8649,6 +8769,7 @@ GameObject:
   - component: {fileID: 1004461464}
   - component: {fileID: 1004461467}
   - component: {fileID: 1004461466}
+  - component: {fileID: 1004461468}
   - component: {fileID: 1004461465}
   m_Layer: 8
   m_Name: IT1Gunshot1
@@ -8802,6 +8923,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &1004461468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1004461459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1038954191
 GameObject:
   m_ObjectHideFlags: 0
@@ -8816,6 +8948,7 @@ GameObject:
   - component: {fileID: 1038954193}
   - component: {fileID: 1038954198}
   - component: {fileID: 1038954197}
+  - component: {fileID: 1038954200}
   - component: {fileID: 1038954199}
   m_Layer: 8
   m_Name: IT3Gunshot2
@@ -8969,6 +9102,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1038954191}
+--- !u!114 &1038954200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1038954191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1050145129
 GameObject:
   m_ObjectHideFlags: 0
@@ -9948,6 +10092,7 @@ GameObject:
   - component: {fileID: 1176773375}
   - component: {fileID: 1176773380}
   - component: {fileID: 1176773379}
+  - component: {fileID: 1176773382}
   - component: {fileID: 1176773381}
   m_Layer: 8
   m_Name: IT4Gunshot2
@@ -10101,6 +10246,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1176773373}
+--- !u!114 &1176773382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1176773373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1193566553
 GameObject:
   m_ObjectHideFlags: 0
@@ -10115,6 +10271,7 @@ GameObject:
   - component: {fileID: 1193566558}
   - component: {fileID: 1193566561}
   - component: {fileID: 1193566560}
+  - component: {fileID: 1193566562}
   - component: {fileID: 1193566559}
   m_Layer: 8
   m_Name: IT1Slash1
@@ -10268,6 +10425,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &1193566562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193566553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1203617406
 GameObject:
   m_ObjectHideFlags: 0
@@ -10282,6 +10450,7 @@ GameObject:
   - component: {fileID: 1203617408}
   - component: {fileID: 1203617413}
   - component: {fileID: 1203617412}
+  - component: {fileID: 1203617415}
   - component: {fileID: 1203617414}
   m_Layer: 8
   m_Name: IT4Slash2
@@ -10435,6 +10604,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1203617406}
+--- !u!114 &1203617415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1203617406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1205227302
 GameObject:
   m_ObjectHideFlags: 0
@@ -11426,6 +11606,7 @@ GameObject:
   - component: {fileID: 1351070894}
   - component: {fileID: 1351070899}
   - component: {fileID: 1351070898}
+  - component: {fileID: 1351070901}
   - component: {fileID: 1351070900}
   m_Layer: 8
   m_Name: IT5Gunshot2
@@ -11579,6 +11760,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1351070892}
+--- !u!114 &1351070901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1351070892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1353208438
 GameObject:
   m_ObjectHideFlags: 0
@@ -11593,6 +11785,7 @@ GameObject:
   - component: {fileID: 1353208440}
   - component: {fileID: 1353208445}
   - component: {fileID: 1353208444}
+  - component: {fileID: 1353208447}
   - component: {fileID: 1353208446}
   m_Layer: 8
   m_Name: IT3Stab1
@@ -11746,6 +11939,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1353208438}
+--- !u!114 &1353208447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353208438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1362490128
 GameObject:
   m_ObjectHideFlags: 0
@@ -11924,6 +12128,7 @@ GameObject:
   - component: {fileID: 1379196670}
   - component: {fileID: 1379196673}
   - component: {fileID: 1379196672}
+  - component: {fileID: 1379196674}
   - component: {fileID: 1379196671}
   m_Layer: 8
   m_Name: IT1Stab2
@@ -12077,6 +12282,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &1379196674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1379196665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1399941023
 GameObject:
   m_ObjectHideFlags: 0
@@ -12369,6 +12585,7 @@ GameObject:
   - component: {fileID: 1415618702}
   - component: {fileID: 1415618707}
   - component: {fileID: 1415618706}
+  - component: {fileID: 1415618709}
   - component: {fileID: 1415618708}
   m_Layer: 8
   m_Name: IT3Stab2
@@ -12522,6 +12739,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1415618700}
+--- !u!114 &1415618709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1415618700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1416479998
 GameObject:
   m_ObjectHideFlags: 0
@@ -12690,6 +12918,7 @@ GameObject:
   - component: {fileID: 1437116986}
   - component: {fileID: 1437116991}
   - component: {fileID: 1437116990}
+  - component: {fileID: 1437116993}
   - component: {fileID: 1437116992}
   m_Layer: 8
   m_Name: IT2Stab1
@@ -12843,6 +13072,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1437116984}
+--- !u!114 &1437116993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1437116984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1457260348
 GameObject:
   m_ObjectHideFlags: 0
@@ -12857,6 +13097,7 @@ GameObject:
   - component: {fileID: 1457260350}
   - component: {fileID: 1457260355}
   - component: {fileID: 1457260354}
+  - component: {fileID: 1457260357}
   - component: {fileID: 1457260356}
   m_Layer: 8
   m_Name: IT5Gunshot1
@@ -13010,6 +13251,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1457260348}
+--- !u!114 &1457260357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457260348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1475249461
 GameObject:
   m_ObjectHideFlags: 0
@@ -13269,6 +13521,7 @@ GameObject:
   - component: {fileID: 1495337042}
   - component: {fileID: 1495337047}
   - component: {fileID: 1495337046}
+  - component: {fileID: 1495337049}
   - component: {fileID: 1495337048}
   m_Layer: 8
   m_Name: IT5Stab2
@@ -13422,6 +13675,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1495337040}
+--- !u!114 &1495337049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1495337040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1526404156
 GameObject:
   m_ObjectHideFlags: 0
@@ -14451,6 +14715,7 @@ GameObject:
   - component: {fileID: 1624132334}
   - component: {fileID: 1624132339}
   - component: {fileID: 1624132338}
+  - component: {fileID: 1624132341}
   - component: {fileID: 1624132340}
   m_Layer: 8
   m_Name: IT2Gunshot1
@@ -14604,6 +14869,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1624132332}
+--- !u!114 &1624132341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624132332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1624548279
 GameObject:
   m_ObjectHideFlags: 0
@@ -15965,6 +16241,7 @@ GameObject:
   - component: {fileID: 1817745162}
   - component: {fileID: 1817745167}
   - component: {fileID: 1817745166}
+  - component: {fileID: 1817745169}
   - component: {fileID: 1817745168}
   m_Layer: 8
   m_Name: IT3Slash1
@@ -16118,6 +16395,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1817745160}
+--- !u!114 &1817745169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817745160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1850375240
 GameObject:
   m_ObjectHideFlags: 0
@@ -16500,6 +16788,7 @@ GameObject:
   - component: {fileID: 1857500511}
   - component: {fileID: 1857500516}
   - component: {fileID: 1857500515}
+  - component: {fileID: 1857500518}
   - component: {fileID: 1857500517}
   m_Layer: 8
   m_Name: IT5Slash2
@@ -16653,6 +16942,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1857500509}
+--- !u!114 &1857500518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857500509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1863466830
 GameObject:
   m_ObjectHideFlags: 0
@@ -16788,6 +17088,7 @@ GameObject:
   - component: {fileID: 1890043820}
   - component: {fileID: 1890043825}
   - component: {fileID: 1890043824}
+  - component: {fileID: 1890043827}
   - component: {fileID: 1890043826}
   m_Layer: 8
   m_Name: IT2Gunshot2
@@ -16941,6 +17242,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1890043818}
+--- !u!114 &1890043827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890043818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1903080530
 GameObject:
   m_ObjectHideFlags: 0
@@ -16955,6 +17267,7 @@ GameObject:
   - component: {fileID: 1903080532}
   - component: {fileID: 1903080537}
   - component: {fileID: 1903080536}
+  - component: {fileID: 1903080539}
   - component: {fileID: 1903080538}
   m_Layer: 8
   m_Name: IT4Slash1
@@ -17108,6 +17421,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1903080530}
+--- !u!114 &1903080539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1903080530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1911919841
 GameObject:
   m_ObjectHideFlags: 0
@@ -17599,6 +17923,7 @@ GameObject:
   - component: {fileID: 1962824822}
   - component: {fileID: 1962824827}
   - component: {fileID: 1962824826}
+  - component: {fileID: 1962824829}
   - component: {fileID: 1962824828}
   m_Layer: 8
   m_Name: IT5Stab1
@@ -17752,6 +18077,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 1962824820}
+--- !u!114 &1962824829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962824820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1964845623 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 196258, guid: dcfff29e15ef0304dbfabcb30a37ad97, type: 2}
@@ -18321,6 +18657,7 @@ GameObject:
   - component: {fileID: 2103476813}
   - component: {fileID: 2103476818}
   - component: {fileID: 2103476817}
+  - component: {fileID: 2103476820}
   - component: {fileID: 2103476819}
   m_Layer: 8
   m_Name: IT2Stab2
@@ -18474,6 +18811,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 2103476811}
+--- !u!114 &2103476820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103476811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2112657288
 GameObject:
   m_ObjectHideFlags: 0
@@ -18528,6 +18876,7 @@ GameObject:
   - component: {fileID: 2122624878}
   - component: {fileID: 2122624883}
   - component: {fileID: 2122624882}
+  - component: {fileID: 2122624885}
   - component: {fileID: 2122624884}
   m_Layer: 8
   m_Name: IT4Gunshot1
@@ -18681,6 +19030,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wound: {fileID: 2122624876}
+--- !u!114 &2122624885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122624876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ebbd98ab2c9245bd7086fa836c114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2123858908
 GameObject:
   m_ObjectHideFlags: 0
