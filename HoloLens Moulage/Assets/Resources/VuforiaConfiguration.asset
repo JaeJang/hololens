@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AbjwU27/////AAAAmYf6VWA5F07KgiQq8uuu0f8zyTCqlDGGLssMLNc3IjP0VY4ZfbiVKxgSGZm99/pDCBnCTRLyV9zEdJGTbSX+lMDX6DLrEXMbitJeg1zf0ZcKT0ff/zgxAwJyFBOUdT+8grsq3x6fCLyD0nQ1W23785gQi0r79WEV730sgy9dVmF1UhhpL/+feA80HVOqicf3bsrAU5AT5d2YMTHq/nnw0wVovZXApyyM4uW492qeAPHoDNmDG4RsyQWj/NtuPMVvscIEP/gbxmSwZ2xWZm1vMkXlP66BUrAEbu375ddRO97Ge30MlfvVXxT9gaaDvYjPMfSTKF6mvDkYzRWZjalMnx9Vx8HxnqTzyuFLoInBd6TH
+    vuforiaLicenseKey: Ac9snyv/////AAAAmRu8WNGpFE4dsOAg4gKq+5QUPygFsSQ8YVl/C62OykaBFAzKmVdfgx9LeKShug/BPD2ehra8rvtqwH25v6UPDMYZkuhThjuy0VwvSrX4o0pVEoV8w/pndsEMdSH5Xz69m8iguCA+ZwmpD43P1BYyS5Zq5AgWSIXp+fttsQseEtQJRgpuigwXrPen9cGNPj/ISzflxRBF4sVoFeHbNJARWak/VNXJfGyJi1DZKJ8dE9a3I/uztuP5f9LITZOMgcyDaqInkPubBK7GWNtgbkWqccrorbPkFlcINae/YsUthDNgnpQjyYA2BCjs91KFOepatTVmKdUKN2C2ctgLqfJyVuGdAnzDlKstShJxZTwxFEsw
     ufoLicenseKey: QVZaWlpwWC8vLy8vQUFBQUtObTFRNVFWeWtYR3VmWWZVbTNGZ2ErQmlEaEhsY2p6c1V5aHlvdzF6cVBINHlpa2kvb0dRVHNnSHVjSjMxL0QvYWh6U0tzcThKQ0RWOFZiK3JzbzNqcWo4UHJHUDMyeSsxbW5nVnY4cE1obmhVbVl3ZTFHbW43Q1J2cUxaK3I0Y2d4a0Zqa3VnS3NhVWVCaW1QZlV5ekgyQ0l0TDVNaXQvOHdPS3NGZW9LMmF2Qjk4N2pPOUE2ejZOelN2bXI5U3lGLzJSZHhZQ1l5bnlBSWR2ZHFMOVVzYk0yZ2FtK3lnRUZHUVlWRGNWQXhrbm1WZ2MwYnRvd1RhZ290SGJ6STBFempLOHlmK2FxaG5CRkxFVG43SjVhUkRoY05ONzI0THROY2pMT21RQnNzVHFmVCtSRTJQUHI1TnJlVCtmdDR0UG5Nc2JGaG8zenNRUGZFUzZnOUVwZjc3QS95dWVkbzlUVmEvR3p5T2ZDYSs=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
-    maxSimultaneousObjectTargets: 1
+    maxSimultaneousImageTargets: 5
+    maxSimultaneousObjectTargets: 5
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -44,9 +44,9 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - TestDB
+    - targetDB
     dataSetsToActivate:
-    - TestDB
+    - targetDB
   videoBackground:
     clippingMode: 0
     numDivisions: 2

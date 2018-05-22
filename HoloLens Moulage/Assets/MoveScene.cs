@@ -36,17 +36,17 @@ public class MoveScene : MonoBehaviour {
         currentImage = ImageTarget.transform.Find(buttonName);
         currentImage.gameObject.SetActive(true);
 
-        if (currentButton != null)
-        {
-            ColorBlock cb1 = currentButton.colors;
-            cb1.normalColor = Color.white;
-            currentButton.colors = cb1;
-        }
+        //if (currentButton != null)
+        //{
+        //    ColorBlock cb1 = currentButton.colors;
+        //    cb1.normalColor = Color.white;
+        //    currentButton.colors = cb1;
+        //}
 
-        currentButton = btn;
-        ColorBlock cb = currentButton.colors;
-        cb.normalColor = Color.blue;
-        currentButton.colors = cb;
+        //currentButton = btn;
+        //ColorBlock cb = currentButton.colors;
+        //cb.normalColor = Color.blue;
+        //currentButton.colors = cb;
 
         menu.gameObject.SetActive(false);
         

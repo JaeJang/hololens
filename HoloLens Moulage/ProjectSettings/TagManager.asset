@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TagAlong
+  - IT1
+  - IT2
+  - IT3
+  - IT4
+  - IT5
   layers:
   - Default
   - TransparentFX
@@ -13,8 +19,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Wound
+  - Data
   - 
   - 
   - 

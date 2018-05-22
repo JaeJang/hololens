@@ -93,7 +93,8 @@ public class Keyword : MonoBehaviour
 
         //Vector3 cameraPos = Camera.main.transform.position;
         //Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
-
+        itemCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 3;
+        itemCanvas.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
         //itemCanvas.transform.position = newPos;
         //xRay.transform.position = newPos;
         itemCanvas.SetActive(true);
@@ -103,6 +104,9 @@ public class Keyword : MonoBehaviour
     void displayData()
     {
         menu.SetActive(false);
+        itemCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 3;
+        itemCanvas.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
+
         itemCanvas.SetActive(true);
         test.SetActive(true);
         result.SetActive(true);

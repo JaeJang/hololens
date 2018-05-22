@@ -43,11 +43,11 @@ UnityEngine.GameCenterModule.dll
 UnityEngine.InputModule.dll
 UnityEngine.IMGUIModule.dll
 UnityEngine.ImageConversionModule.dll
-Newtonsoft.Json.dll
 UnityEngine.Timeline.dll
 nunit.framework.dll
 UnityEngine.UI.dll
 UnityEngine.SpatialTracking.dll
+TextMeshPro-2017.3-Runtime.dll
 UnityEngine.Analytics.dll
 UnityEngine.HoloLens.dll
 Vuforia.UnityExtensions.dll

@@ -1,6 +1,5 @@
-/*==============================================================================
+﻿/*==============================================================================
 Copyright (c) 2017 PTC Inc. All Rights Reserved.
-
 Copyright (c) 2010-2014 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
@@ -29,7 +28,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
-        
+
     }
 
     #endregion // UNTIY_MONOBEHAVIOUR_METHODS
@@ -88,7 +87,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
 
-        menu.gameObject.SetActive(false);
+        setCheck(true);
+        //menu.gameObject.SetActive(false);
         Cursor.gameObject.SetActive(false);
     }
 
@@ -112,14 +112,51 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             component.enabled = false;
 
 
-        //Vector3 cameraPos = Camera.main.transform.position;
-        //Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
-        //Vector3 newRotation = Camera.main.transform.forward;
-        //menu.transform.position = newPos;
-        //menu.transform.rotation = Quaternion.LookRotation(newRotation);
 
-        menu.gameObject.SetActive(true);
+        //// Get user's head position
+        //Vector3 cameraPos = Camera.main.transform.position;
+
+        //// Get a new position which will be used for displaying menu
+        //Vector3 newPos = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z + 3);
+
+        //// Get a rotation value of the main camera
+        //Vector3 newRotation = Camera.main.transform.forward;
+
+
+        //GameObject canvas = GameObject.Find("Canvas");
+
+
+        //Quaternion quat = Camera.main.transform.localRotation;
+        //quat.x = 0;
+        //quat.z = 0;
+        //canvas.transform.rotation = quat;
+        //canvas.transform.position = newPos;
+
+        //canvas.transform.rotation = Quaternion.LookRotation(newRotation);
+
+
+        setCheck(false);
+        //menu.gameObject.SetActive(true);
         Cursor.gameObject.SetActive(true);
+    }
+
+    private void setCheck(bool tf)
+    {
+        if(gameObject.name.Equals("TargetImage1")) {
+            menu.transform.Find("ImageOption").transform.Find("Image1").transform.Find("Image1Check").gameObject.SetActive(tf);
+        } else if (gameObject.name.Equals("TargetImage2"))
+        {
+            menu.transform.Find("ImageOption").transform.Find("Image2").transform.Find("Image2Check").gameObject.SetActive(tf);
+        } else if (gameObject.name.Equals("TargetImage3"))
+        {
+            menu.transform.Find("ImageOption").transform.Find("Image3").transform.Find("Image3Check").gameObject.SetActive(tf);
+        } else if (gameObject.name.Equals("TargetImage4"))
+        {
+            menu.transform.Find("ImageOption").transform.Find("Image4").transform.Find("Image4Check").gameObject.SetActive(tf);
+        } else if (gameObject.name.Equals("TargetImage5"))
+        {
+            menu.transform.Find("ImageOption").transform.Find("Image5").transform.Find("Image5Check").gameObject.SetActive(tf);
+        }
     }
 
     #endregion // PRIVATE_METHODS
