@@ -111,7 +111,6 @@ public class MainMenu : MonoBehaviour {
 
     public void openWoundType(Button button)
     {
-        resetDectectionCheckboxes();
         clearOptionPanels();
         confirmMenu.SetActive(false);
         imageOptionColorReset();
@@ -130,7 +129,6 @@ public class MainMenu : MonoBehaviour {
 
     public void openWoundOption(Button button)
     {
-        resetDectectionCheckboxes();
         clearOptionPanels();
         woundTypeColorReset();
         woundOptionColorReset();
@@ -143,7 +141,6 @@ public class MainMenu : MonoBehaviour {
 
     public void selectWound(Button button)
     {
-        resetDectectionCheckboxes();
         clearSelected();
         woundOptionColorReset();
         onClickedHighlight = button.colors;

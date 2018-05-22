@@ -38,16 +38,47 @@ public class Grammar : MonoBehaviour
     {
         print(args.text);
         SemanticMeaning[] meanings = args.semanticMeanings;
+        string key = meanings[0].values[0];
 
-        string[] items = meanings[0].values;
-        string[] actions = meanings[1].values;
-
-        for (int i = 0; i < actions.Length; i++)
+        int k = 1;
+        foreach (SemanticMeaning meaning in meanings)
         {
-            string[] subitems = items[i].Split();
-            for (int j = 0; j < subitems.Length; j++)
+            print(k);
+            foreach (string s in meaning.values)
             {
-                actionResponse(actions[i], subitems[j]);
+                print(meaning.key + " " + s);
+            }
+            k++;
+        }
+
+        if (key == "basiccommand")
+        {
+            string[] items = meanings[1].values;
+            string[] actions = meanings[2].values;
+
+            for (int i = 0; i < actions.Length; i++)
+            {
+                string[] subitems = items[i].Split();
+                for (int j = 0; j < subitems.Length; j++)
+                {
+                    actionResponse(actions[i], subitems[j]);
+                }
+            }
+        }
+        else if (key == "targetimagecommand")
+        {
+            string[] targets = meanings[1].values;
+            string[] wounds = meanings[2].values;
+            string[] actions = meanings[3].values;
+
+            for (int i = 0; i < actions.Length; i++)
+            {
+                string[] subitems = targets[i].Split();
+                for (int j = 0; j < subitems.Length; j++)
+                {
+                    actionResponse(actions[i], subitems[j], wounds[i]);
+                    print(subitems[j] + " " + wounds[i]);
+                }
             }
         }
     }
@@ -134,5 +165,30 @@ public class Grammar : MonoBehaviour
                 closeMenu();
             }
         }
+    }
+
+    void actionResponse(string action, string target, string wound)
+    {
+        if (action == "show" && wound != "null")
+        {
+            resetWound(target);
+            string num = "IT" + target.Substring(11, target.Length - 11);
+            GameObject.Find(target).transform.Find(num + wound).gameObject.SetActive(true);
+        }
+        else if (action == "close")
+        {
+            resetWound(target);
+        }
+    }
+
+    private void resetWound(string target)
+    {
+        string num = "IT" + target.Substring(11, target.Length - 11);
+        GameObject.Find(target).transform.Find(num + "Gunshot1").gameObject.SetActive(false);
+        GameObject.Find(target).transform.Find(num + "Gunshot2").gameObject.SetActive(false);
+        GameObject.Find(target).transform.Find(num + "Slash1").gameObject.SetActive(false);
+        GameObject.Find(target).transform.Find(num + "Slash2").gameObject.SetActive(false);
+        GameObject.Find(target).transform.Find(num + "Stab1").gameObject.SetActive(false);
+        GameObject.Find(target).transform.Find(num + "Stab2").gameObject.SetActive(false);
     }
 }
