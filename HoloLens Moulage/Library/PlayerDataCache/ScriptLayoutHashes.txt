@@ -102,6 +102,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.getInFrontOfYou
 a0c721105be7b25bd91dbfa3278c61d2 Assembly-CSharp.dll:.DismissOnSelect
 76015de5fcb247eeb8df66c001d5a22d Assembly-CSharp.dll:TMPro.Examples.TMP_UiFrameRateCounter
 75cd0c6c744b9733ef29aa6c59ece2b1 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
@@ -306,6 +307,7 @@ df343383b9d2e96226a204a164f3994d Assembly-CSharp.dll:.DragMe
 b37111b5185641041734c4376983126d Assembly-CSharp.dll:.ImgTarget1Scrpt
 ecd2c13a8828eba4a5b6eaaaeee884fa Assembly-CSharp.dll:.GestureAction
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.whereYouAre
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GrammarScriptController
 62229a3e4d53ca59bec192e89627ed52 Assembly-CSharp.dll:TMPro.Examples.CameraController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
@@ -417,5 +419,4 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.getInFrontOfYou
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GrammarScriptController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.keepOriginalSize
