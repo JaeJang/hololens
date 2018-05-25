@@ -14,25 +14,30 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
         </one-of>
         <item repeat="0-1"> please </item>
 		<one-of>
-			<item> <ruleref uri="#vocommand"/> <tag> out.vocommand = rules.vocommand; </tag> </item>
-			<item> <ruleref uri="#ovcommand"/> <tag> out.ovcommand = rules.ovcommand; </tag> </item>
-			<item> <ruleref uri="#twocommands"/> <tag> out.twocommands = rules.twocommands; </tag> </item>
+			<item> <ruleref uri="#multibasiccommands"/> <tag> out.multibasiccommands = rules.multibasiccommands; </tag> </item>
+			<item> <ruleref uri="#multitargetcommands"/> <tag> out.multitargetcommands = rules.multitargetcommands; </tag> </item>
 		</one-of>
 	</rule>
 	
-	<rule id="twocommands">
+	<rule id="multibasiccommands">
 		<one-of>
 			<item> <ruleref uri="#vocommand"/> <tag> out.command1 = rules.vocommand; </tag> </item>
 			<item> <ruleref uri="#ovcommand"/> <tag> out.command1 = rules.ovcommand; </tag> </item>
 		</one-of>
-		<item> and </item>
+		<item repeat="0-1"> and </item>
 		<one-of>
-			<item> <ruleref uri="#vocommand"/> <tag> out.command2 = rules.vocommand; </tag> </item>
-			<item> <ruleref uri="#ovcommand"/> <tag> out.command2 = rules.ovcommand; </tag> </item>
+			<item repeat="0-1"> <ruleref uri="#vocommand"/> <tag> out.command2 = rules.vocommand; </tag> </item>
+			<item repeat="0-1"> <ruleref uri="#ovcommand"/> <tag> out.command2 = rules.ovcommand; </tag> </item>
+		</one-of>
+		<item repeat="0-1"> and </item>
+		<one-of>
+			<item repeat="0-1"> <ruleref uri="#vocommand"/> <tag> out.command3 = rules.vocommand; </tag> </item>
+			<item repeat="0-1"> <ruleref uri="#ovcommand"/> <tag> out.command3 = rules.ovcommand; </tag> </item>
 		</one-of>
     </rule>
 	
     <rule id="vocommand">
+		<tag> out.command = "basiccommand"; </tag>
         <ruleref uri="#activeaction"/> <tag> out.action = rules.activeaction; </tag>
         <one-of>
             <item repeat="0-1"> me </item>
@@ -46,6 +51,7 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
     </rule>
 	
 	<rule id="ovcommand">
+		<tag> out.command = "basiccommand"; </tag>
 		<one-of>
             <item repeat="0-1"> have </item>
             <item repeat="0-1"> make </item>
@@ -63,7 +69,10 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
         <one-of>
             <item> display <tag> out="show"; </tag></item>
             <item> bring <tag> out="show"; </tag></item>
+			<item> set <tag> out="show"; </tag></item>
             <item> show <tag> out="show"; </tag></item>
+			<item> put <tag> out="show"; </tag></item>
+			<item> keep <tag> out="show"; </tag></item>
             <item> project <tag> out="show"; </tag></item>
 			<item> print <tag> out="show"; </tag></item>
 			<item> present <tag> out="show"; </tag></item>
@@ -88,7 +97,6 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
 			<item> appear <tag> out="show"; </tag></item>
 			<item> pop up <tag> out="show"; </tag></item>
             <item> displayed <tag> out="show"; </tag></item>
-			<item> keep <tag> out="show"; </tag></item>
             <item> shown <tag> out="show"; </tag></item>
 			<item> printed <tag> out="show"; </tag></item>
 			<item> turned on <tag> out="show"; </tag></item>
@@ -121,6 +129,141 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
         </one-of>
     </rule>
 	
+	<rule id="multitargetcommands">
+		<one-of>
+            <item> <ruleref uri="#setwound"/> <tag> out.command1 = rules.setwound; </tag> </item>
+			<item> <ruleref uri="#removewound"/> <tag> out.command1 = rules.removewound; </tag> </item>
+        </one-of>
+		<item repeat="0-1"> and </item>
+		<one-of>
+			<item repeat="0-1"> <ruleref uri="#setwound"/> <tag> out.command2 = rules.setwound; </tag> </item>
+			<item repeat="0-1"> <ruleref uri="#removewound"/> <tag> out.command2 = rules.removewound; </tag> </item>
+		</one-of>
+		<item repeat="0-1"> and </item>
+		<one-of>
+			<item repeat="0-1"> <ruleref uri="#setwound"/> <tag> out.command3 = rules.setwound; </tag> </item>
+			<item repeat="0-1"> <ruleref uri="#removewound"/> <tag> out.command3 = rules.removewound; </tag> </item>
+		</one-of>
+		<item repeat="0-1"> and </item>
+		<one-of>
+			<item repeat="0-1"> <ruleref uri="#setwound"/> <tag> out.command4 = rules.setwound; </tag> </item>
+			<item repeat="0-1"> <ruleref uri="#removewound"/> <tag> out.command4 = rules.removewound; </tag> </item>
+		</one-of>
+		<item repeat="0-1"> and </item>
+		<one-of>
+			<item repeat="0-1"> <ruleref uri="#setwound"/> <tag> out.command5 = rules.setwound; </tag> </item>
+			<item repeat="0-1"> <ruleref uri="#removewound"/> <tag> out.command5 = rules.removewound; </tag> </item>
+		</one-of>
+	</rule>
+	
+	<rule id="setwound">
+		<tag> out.command = "targetimagecommand"; </tag>
+		<tag> out.action = "show"; </tag>
+        <one-of>
+            <item repeat="0-1"> put </item>
+            <item repeat="0-1"> set </item>
+			<item repeat="0-1"> display </item>
+            <item repeat="0-1"> project </item>
+			<item repeat="0-1"> place </item>
+			<item repeat="0-1"> print </item>
+			<item repeat="0-1"> present </item>
+            <item repeat="0-1"> enable </item>
+			<item repeat="0-1"> turn on </item>
+			<item repeat="0-1"> show </item>
+        </one-of>
+        <one-of>
+            <item repeat="0-1"> a </item>
+            <item repeat="0-1"> an </item>
+			<item repeat="0-1"> one </item>
+            <item repeat="0-1"> two </item>
+			<item repeat="0-1"> three </item>
+            <item repeat="0-1"> four </item>
+			<item repeat="0-1"> five </item>
+        </one-of>
+		<ruleref uri="#wound"/> <tag> out.wound = rules.wound; </tag>
+		<one-of>
+			<item repeat="0-1"> at </item>
+            <item repeat="0-1"> in </item>
+            <item repeat="0-1"> on </item>
+			<item repeat="0-1"> on top of </item>
+        </one-of>
+		<ruleref uri="#target"/> <tag> out.target = rules.target; </tag>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> <ruleref uri="#target"/> <tag> out.target += " " + rules.target; </tag> </item>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> <ruleref uri="#target"/> <tag> out.target += " " + rules.target; </tag> </item>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> <ruleref uri="#target"/> <tag> out.target += " " + rules.target; </tag> </item>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> <ruleref uri="#target"/> <tag> out.target += " " + rules.target; </tag> </item>
+    </rule>
+	
+	<rule id="removewound">
+		<tag> out.command = "targetimagecommand"; </tag>
+		<tag> out.action = "close"; </tag>
+		<tag> out.wound = "null"; </tag>
+        <one-of>
+            <item> close </item>
+			<item> reset </item>
+            <item> hide </item>
+			<item> turn off </item>
+			<item> disable </item>
+			<item> remove </item>
+			<item> clear </item>
+			<item> clear up </item>
+			<item> clean </item>
+			<item> clean up </item>
+        </one-of>
+        <item repeat="0-1"> the </item>
+		<one-of>
+            <item repeat="0-1"> wound </item>
+            <item repeat="0-1"> wounds </item>
+        </one-of>
+		<one-of>
+            <item repeat="0-1"> from </item>
+            <item repeat="0-1"> off </item>
+			<item repeat="0-1"> on </item>
+			<item repeat="0-1"> on top of </item>
+			<item repeat="0-1"> in </item>
+			<item repeat="0-1"> at </item>
+        </one-of>
+		<ruleref uri="#target"/> <tag> out.target = rules.target; </tag>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> <ruleref uri="#target"/> <tag> out.target += " " + rules.target; </tag> </item>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> <ruleref uri="#target"/> <tag> out.target += " " + rules.target; </tag> </item>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> <ruleref uri="#target"/> <tag> out.target += " " + rules.target; </tag> </item>
+		<item repeat="0-1"> and </item>
+		<item repeat="0-1"> <ruleref uri="#target"/> <tag> out.target += " " + rules.target; </tag> </item>
+    </rule>
+	
+	<rule id="target">
+        <one-of>
+            <item repeat="0-1"> target </item>
+			<item repeat="0-1"> target image </item>
+			<item repeat="0-1"> image target </item>
+        </one-of>
+		<ruleref uri="#number"/> <tag> out = "ImageTarget" + rules.number; </tag>
+    </rule>
+	
+	<rule id="wound">
+        <one-of>
+            <item> gunshot <tag> out="Gunshot"; </tag></item>
+			<item> slash <tag> out="Slash"; </tag></item>
+			<item> stab <tag> out="Stab"; </tag></item>
+        </one-of>
+		<ruleref uri="#number"/> <tag> out += rules.number; </tag>
+    </rule>
 
+	<rule id="number">
+        <one-of>
+            <item> one <tag> out="1"; </tag></item>
+			<item> two <tag> out="2"; </tag></item>
+			<item> three <tag> out="3"; </tag></item>
+			<item> four <tag> out="4"; </tag></item>
+			<item> five <tag> out="5"; </tag></item>
+        </one-of>
+    </rule>
 	
 </grammar>

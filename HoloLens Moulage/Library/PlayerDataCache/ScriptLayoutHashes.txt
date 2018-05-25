@@ -305,6 +305,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 108ae927f4934540bea01bb3c4afd105 Assembly-CSharp.dll:.TrackableEventHandler_Image4
 df343383b9d2e96226a204a164f3994d Assembly-CSharp.dll:.DragMe
 b37111b5185641041734c4376983126d Assembly-CSharp.dll:.ImgTarget1Scrpt
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.keepOriginalSize
 ecd2c13a8828eba4a5b6eaaaeee884fa Assembly-CSharp.dll:.GestureAction
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.whereYouAre
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GrammarScriptController
@@ -419,4 +420,3 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.keepOriginalSize

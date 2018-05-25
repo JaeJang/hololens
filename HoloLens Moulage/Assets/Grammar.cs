@@ -174,10 +174,12 @@ public class Grammar : MonoBehaviour
             resetWound(target);
             string num = "IT" + target.Substring(11, target.Length - 11);
             GameObject.Find(target).transform.Find(num + wound).gameObject.SetActive(true);
+            menu.transform.Find("ImageOption").transform.Find("Image" + target.Substring(11, target.Length - 11)).transform.Find("ConfigCheck").gameObject.SetActive(true);
         }
         else if (action == "close")
         {
             resetWound(target);
+            menu.transform.Find("ImageOption").transform.Find("Image" + target.Substring(11, target.Length - 11)).transform.Find("ConfigCheck").gameObject.SetActive(false);
         }
     }
 
